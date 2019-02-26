@@ -9,11 +9,10 @@ import datastruct.Stack
 
 fun main(args: Array<String>) {
     val map = mapOf(")" to "(","}" to "{","]" to "[" )
-    val list = mutableListOf<String>()
-    var stack = Stack(list)
-    var isValid: Boolean = true
+    var stack = Stack<String>()
+    var isValid = true
 
-    val s = "({}[])"
+    val s = "({}}[])"
 
     println(System.currentTimeMillis())
     for (c in s){

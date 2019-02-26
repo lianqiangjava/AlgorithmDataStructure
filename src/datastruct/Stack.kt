@@ -4,13 +4,13 @@ package datastruct
  栈
  */
 
-class Stack<T: Comparable<T>>(list: MutableList<T>) : Iterator<T>{
+class Stack<T> : Iterator<T>{
 
     //stack的count
     var elementCount: Int = 0
 
     //stack内部实现为MutableList
-    var items: MutableList<T> = list
+    var items: MutableList<T> = mutableListOf()
 
     //判断Stack是否为null
     fun isEmpty(): Boolean = this.items.isEmpty()
